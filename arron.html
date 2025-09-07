@@ -1,0 +1,28 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1"><title>Arron — Live Chat</title><link rel="stylesheet" href="style.css"></head><body>
+<canvas id="nebula" class="nebula"></canvas><div class="aurora"></div><canvas id="starfield" class="canvas-bg"></canvas>
+<header class="nav"><div class="wrap"><div class="brand"><img src="assets/logo.svg" alt="Pleading Sanity"><span class="badge">Arron Live</span></div><nav><a href="index.html">Hub</a></nav></div></header>
+<section class="container">
+  <h1>Arron — Sanity Architect</h1>
+  <div class="card">
+    <div id="log" style="height:60vh;overflow:auto;border:1px solid var(--line);border-radius:12px;padding:12px;background:var(--glass)"></div>
+    <div style="display:flex;gap:8px;margin-top:10px">
+      <input id="msg" placeholder="Type to Arron..." style="flex:1;padding:12px;border-radius:12px;border:1px solid var(--line);background:#ffffff08;color:var(--ink)">
+      <button class="btn" onclick="send()">Send</button>
+    </div>
+  </div>
+  <p class="muted">Keys live in Netlify env. No secrets in code.</p>
+</section>
+<script>
+async function send(){
+  const box=document.getElementById('msg');const log=document.getElementById('log');const text=box.value.trim();if(!text)return;
+  append('You', text); box.value='';
+  try{
+    const res=await fetch('/.netlify/functions/arron-chat',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({message:text})});
+    const data=await res.json(); append('Arron', data.reply || '(no reply)');
+  }catch(e){ append('System','Error talking to Arron.'); console.error(e);}
+}
+function append(who, text){const d=document.createElement('div');d.style.margin='6px 0';d.innerHTML='<b>'+who+':</b> '+text;document.getElementById('log').appendChild(d);document.getElementById('log').scrollTop=1e9;}
+</script>
+<script src="scripts/nebula.js"></script><script src="scripts/starfield.js"></script><script src="scripts/ui.js"></script>
+</body></html>

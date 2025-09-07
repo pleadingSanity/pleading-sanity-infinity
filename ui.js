@@ -1,0 +1,1 @@
+(function(){const g=document.createElement('div');g.className='cursor-glow';document.body.appendChild(g);addEventListener('pointermove',e=>{g.style.setProperty('--mx', e.clientX+'px');g.style.setProperty('--my', e.clientY+'px');});})();

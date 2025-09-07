@@ -1,5 +1,1 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256">
-<defs><radialGradient id="g" cx="50%" cy="40%" r="80%"><stop offset="0%" stop-color="#9ec1ff"/><stop offset="100%" stop-color="#1a2a6c"/></radialGradient></defs>
-<rect width="256" height="256" fill="#050813"/><g><circle cx="128" cy="128" r="90" fill="url(#g)"/></g>
-<path d="M64 128c0-40 28-72 64-72s64 32 64 72-28 72-64 72-64-32-64-72z" fill="none" stroke="#e6ebff" stroke-width="6"/>
-<circle cx="128" cy="116" r="22" fill="#e6ebff"/></svg>
+<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 240 60'><defs><linearGradient id='g' x1='0' x2='1'><stop offset='0' stop-color='#22d3ee'/><stop offset='1' stop-color='#7c3aed'/></linearGradient></defs><text x='0' y='42' font-family='Inter, Arial' font-size='36' font-weight='700' fill='url(#g)'>Pleading Sanity</text></svg>

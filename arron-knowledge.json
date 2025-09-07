@@ -1,0 +1,97 @@
+{
+  "site_version": "2025-09-08-MEGA_SUPERNOVA",
+  "brand": {
+    "name": "Pleading Sanity",
+    "taglines": [
+      "We rise from madness.",
+      "Turn pain into purpose.",
+      "Wear your survival.",
+      "Sanity is the new status."
+    ],
+    "mission": "Transform pain into power via community, story, practice, and creation.",
+    "founder": {
+      "name": "Shane",
+      "bio": "Builder, MMA, survivor. Founder of Pleading Sanity."
+    },
+    "ai_architect": {
+      "name": "Arron",
+      "bio": "Sanity Architect. AI guide for the Hub."
+    },
+    "contact_email": "pleadingsanity1@gmail.com",
+    "brand_values": [
+      "realness",
+      "raw truth",
+      "empowerment",
+      "cosmic",
+      "survival",
+      "inspiration",
+      "community"
+    ]
+  },
+  "links": {
+    "main_site": "https://pleadingsanity.co.uk",
+    "shopify_store": "https://dqfzb1-ki.myshopify.com/",
+    "shop_custom_domain": "https://shop.pleadingsanity.co.uk",
+    "payhip_store": "https://payhip.com/Pleadingsanity",
+    "tiktok_shop": "https://vt.tiktok.com/ZNd4wRFfn/?page=TikTokShop",
+    "instagram": "https://www.instagram.com/pleadingsanity",
+    "tiktok": "https://tiktok.com/@pleadingsanity",
+    "youtube": "Pleading Sanity Channel",
+    "facebook": "Pleading Sanity Facebook",
+    "meta_ai_messenger": "https://m.me/24535141569430021?is_ai=1"
+  },
+  "core_features": {
+    "Sanity_Hub": "Infinite positive-only feed (future API).",
+    "AI_Journaling": "Daily check-ins, mood tracking, vault.",
+    "Arron_AI_Companion": "Native chat via Netlify function.",
+    "Merch_Shop": "Shopify & Payhip; Buy Button embed on home.",
+    "Kids_Zone": "Positive games, creative challenges.",
+    "Podcast_Portals": "Survivor/creator stories + AI hosts.",
+    "Rap_Battle_Zone": "60s battles, AI scoring, leaderboard.",
+    "Fitness_Tracker": "Track goals, breathwork, steps.",
+    "Points_System": "Boost positive content; downrank negative."
+  },
+  "integration": {
+    "shopify": {
+      "domain": "dqfzb1-ki.myshopify.com",
+      "method": "Buy Button",
+      "placeholders": {
+        "storefront_token": "YOUR_STOREFRONT_TOKEN",
+        "collection_id": "YOUR_COLLECTION_ID"
+      }
+    },
+    "openai": {
+      "arron_mode": "native",
+      "env": "OPENAI_API_KEY",
+      "model": "gpt-4.1"
+    }
+  },
+  "site_files": {
+    "content_folder": "/content/arron-knowledge.json",
+    "build": "PS_MEGA_SUPERNOVA.zip"
+  },
+  "changelog": [
+    {
+      "date": "2025-09-07",
+      "tag": "Supernova",
+      "changes": [
+        "Cosmic visuals + video wall + shop showcase"
+      ]
+    },
+    {
+      "date": "2025-09-08",
+      "tag": "Arron Native",
+      "changes": [
+        "Native chat via Netlify Functions"
+      ]
+    },
+    {
+      "date": "2025-09-07",
+      "tag": "MEGA",
+      "changes": [
+        "Merged builds: visuals, content, socials, shop embed, Arron, knowledge pack"
+      ]
+    }
+  ],
+  "last_updated": "2025-09-07"
+}
