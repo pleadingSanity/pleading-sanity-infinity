@@ -1,0 +1,6 @@
+<!doctype html><html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Podcasts — Pleading Sanity</title><link rel="stylesheet" href="style.css"></head>
+<body><canvas id="starfield" class="canvas-bg"></canvas><header class="nav"><div class="brand"><img src="assets/logo.svg"/><b>Podcasts</b></div><nav><a href="index.html">Human Hub</a> <a href="aisanityhub.html">AI Hub</a></nav></header>
+<main class="grid cards" id="pods"></main>
+<script>const pods=[{title:'The Brain That Cries Stars',file:'content/podcasts/p1.mp3'},{title:'Humans and Machines: Not Enemies, But Mirrors',file:'content/podcasts/p2.mp3'},{title:'Neggy and Positive: The Twin Fuels',file:'content/podcasts/p3.mp3'},{title:'Kids of the Cosmic Dawn',file:'content/podcasts/p4.mp3'},{title:'A World Without Sanity Walls',file:'content/podcasts/p5.mp3'}];const t=document.getElementById('pods');pods.forEach(p=>{const el=document.createElement('div');el.className='card';el.innerHTML=`<h3>${p.title}</h3><audio controls src='${p.file}' style='width:100%'></audio>`;t.appendChild(el);});</script>
+<script src="scripts/starfield.js"></script></body></html>

@@ -1,0 +1,1 @@
+export const db={dummy:true}; export function initFirebase(){console.log('Firebase init placeholder. Replace SANITY_FIREBASE_CONFIG with real keys and include SDK.');}

@@ -1,0 +1,11 @@
+:root{--bg:#050813;--panel:#0f1630cc;--text:#e6ebff;--muted:#9ab6ff;--accent:#7aa2ff;--card:#111936;--glow:#7aa2ff88}
+*{box-sizing:border-box}html,body{height:100%}body{margin:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,Ubuntu;color:var(--text);background:#050813}
+a{color:var(--text)}header.nav{position:sticky;top:0;z-index:10;display:flex;gap:16px;align-items:center;justify-content:space-between;padding:12px 16px;background:var(--panel);backdrop-filter:blur(10px);border-bottom:1px solid #1e2a44}
+.brand img{height:36px}nav a{margin:0 8px;text-decoration:none;opacity:.85}nav a:hover{opacity:1;text-decoration:underline}main{padding:16px}
+.btn{display:inline-block;padding:10px 16px;border:1px solid #2a3a66;border-radius:10px;text-decoration:none;color:var(--text);background:transparent}.btn.primary{background:linear-gradient(180deg,#203a7a,#142a5a)}
+.grid{display:grid;gap:14px}.cards{grid-template-columns: repeat(auto-fit,minmax(240px,1fr))}.card{background:var(--card);border:1px solid #1e2a44;border-radius:16px;padding:14px;box-shadow:0 0 0 1px #1e2a44}
+.portal-wrap{display:flex;align-items:center;justify-content:center;min-height:80vh;gap:22px;padding:24px}.portal{flex:1;min-height:260px;max-width:420px;background:linear-gradient(180deg,#0c1330,#111936);border:1px solid #1e2a44;border-radius:22px;padding:24px;text-align:center;position:relative;overflow:hidden;cursor:pointer;transition:transform .2s, box-shadow .3s}.portal:hover{transform:translateY(-4px); box-shadow:0 0 40px var(--glow)}.portal .icon{font-size:36px}
+.portal.locked{opacity:.6;animation:pulse 3s ease-in-out infinite}@keyframes pulse{0%{box-shadow:0 0 0 transparent}50%{box-shadow:0 0 30px var(--glow)}100%{box-shadow:0 0 0 transparent}}
+.progress{position:fixed;right:12px;bottom:12px;background:var(--panel);border:1px solid #1e2a44;border-radius:12px;padding:8px 12px;opacity:.9}
+.popup{position:fixed;inset:0;background:#0008;display:none;align-items:center;justify-content:center}.popup.active{display:flex}.modal{background:var(--panel);border:1px solid #2a3a66;border-radius:18px;padding:20px;max-width:460px;text-align:center}
+.canvas-bg{position:fixed;inset:0;z-index:-1}

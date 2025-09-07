@@ -1,0 +1,1 @@
+import {attachVisualiser} from './visualiser.js';const btn=document.getElementById('audioToggle');const audio=document.getElementById('cosmicAudio');if(btn&&audio){btn.addEventListener('click',()=>{if(audio.paused){audio.play();btn.innerText='🔇 Mute Cosmic Audio';}else{audio.pause();btn.innerText='🌌 Enable Cosmic Audio';}});attachVisualiser(audio,'visualiser');}

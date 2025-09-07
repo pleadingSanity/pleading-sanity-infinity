@@ -1,0 +1,1 @@
+<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 800 600'><rect width='800' height='600' fill='#050813'/><g><circle cx='400' cy='300' r='220' fill='none' stroke='#2a3a66' stroke-width='2'><animate attributeName='r' values='200;230;200' dur='8s' repeatCount='indefinite'/></circle></g></svg>

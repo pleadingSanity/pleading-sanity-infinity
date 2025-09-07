@@ -1,0 +1,12 @@
+const SANITY_AI_CONFIG={OPENAI_API_KEY:"REPLACE_WITH_YOUR_OPENAI_KEY",MODEL:"gpt-5",VOICE:"alloy"};
+const SANITY_FIREBASE_CONFIG={apiKey:"DEMO_API_KEY",authDomain:"demo.firebaseapp.com",projectId:"demo",storageBucket:"demo.appspot.com",messagingSenderId:"1234567890",appId:"1:1234567890:web:demo"};
+const YOUTUBE_API_KEY="REPLACE_WITH_YOUR_YOUTUBE_KEY"; const YOUTUBE_PLAYLIST_ID="DEMO_AI_PLAYLIST_ID";
+const SANITY_FEED_TOPICS=["mental health","resilience","AI future","Pleading Sanity","cosmic philosophy"];
+const PORTAL_SELECTOR_ENABLED=true; const HIDDEN_PORTAL_ENABLED=true; const HIDDEN_PORTAL_ACCESS="auth";
+const HUB_MODES={sanity:{allowPosts:"humansOnly",allowView:"all"}, ai:{allowPosts:"aiOnly",allowView:"all",allowComments:true}};
+let SHOP_UNLOCK_AFTER=10; let SHOP_URL="https://shop.pleadingsanity.co.uk"; let SHOP_REPEAT=true; let SHOW_PROGRESS=true; let SHOW_SUPPORTERS=true;
+const COSMIC_AUDIO_ENABLED=true; const COSMIC_AUDIO_DEFAULT=false; const COSMIC_HEALING_FREQ=432; const COSMIC_VISUALISER_ENABLED=true;
+const MEDITATION_MODE_ENABLED=true; const MEDITATION_FREQ=432; const MEDITATION_GLOBAL=true;
+const SHOW_BUSINESS_PLAN=false; const PLAN_ACCESS_MODE="auth"; const ALLOW_SELF_SIGNUP=true; const USER_AVATARS_ENABLED=true; const DEFAULT_AVATAR="/assets/avatars/cosmic-default.png";
+const SIGNUP_INITIATION_ENABLED=true; const SIGNUP_WELCOME_MESSAGE="Welcome to the inner chamber of Pleading Sanity. Few dare to enter. You are now part of the blueprint."; const PERSONAL_GREETING_ENABLED=true;
+const SANITY_FEED_MODE={autoOnVisit:true,allowGenerateMore:true}; const ENABLE_FALLBACK_QUOTES=true;
